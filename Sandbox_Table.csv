@@ -1,0 +1,4 @@
+Id,name,Categories,Protocols,Authentication
+1,DxF Sandbox,"Patient, Encounter, Practitioner","MLLP, FHIR, sFTP",
+2,VA Cerner,Organizational,JSON,API key
+3,NextGen Healthcare,"Organizational, Patient","JSON, FHIR R4, FHIR DSTU2, FHIR Bulk","Oauth, Client Authorication"
