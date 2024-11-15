@@ -1,0 +1,4 @@
+"~id","~labels","name","categories","protocols","authentication"
+"0","Sandbox","NextGen Healthcare","Organizational, Patient","JSON, FHIR R4, FHIR DSTU2, FHIR Bulk","Oauth, Client Authorication"
+"1","Sandbox","DxF Sandbox","Patient, Encounter, Practitioner","MLLP, FHIR, sFTP",
+"2","Sandbox","VA Cerner","Organizational","JSON","API key"

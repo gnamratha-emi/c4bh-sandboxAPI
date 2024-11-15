@@ -1,0 +1,9 @@
+"~start_node_id","~start_node_labels","~start_node_property_name","~start_node_property_categories","~start_node_property_protocols","~start_node_property_authentication","~relationship_type","~relationship_property_api_type","~end_node_id","~end_node_labels","~end_node_property_name","~end_node_property_categories","~end_node_property_protocols","~end_node_property_authentication"
+"0","Sandbox","NextGen Healthcare","Organizational, Patient","JSON, FHIR R4, FHIR DSTU2, FHIR Bulk","Oauth, Client Authorication","USES_API","Patients","1","Sandbox","DxF Sandbox","Patient, Encounter, Practitioner","MLLP, FHIR, sFTP",
+"1","Sandbox","DxF Sandbox","Patient, Encounter, Practitioner","MLLP, FHIR, sFTP",,"USES_API","Patients","0","Sandbox","NextGen Healthcare","Organizational, Patient","JSON, FHIR R4, FHIR DSTU2, FHIR Bulk","Oauth, Client Authorication"
+"2","Sandbox","VA Cerner","Organizational","JSON","API key","USES_API","Patients","1","Sandbox","DxF Sandbox","Patient, Encounter, Practitioner","MLLP, FHIR, sFTP",
+"2","Sandbox","VA Cerner","Organizational","JSON","API key","USES_API","Facilities","1","Sandbox","DxF Sandbox","Patient, Encounter, Practitioner","MLLP, FHIR, sFTP",
+"2","Sandbox","VA Cerner","Organizational","JSON","API key","USES_API","Providers","1","Sandbox","DxF Sandbox","Patient, Encounter, Practitioner","MLLP, FHIR, sFTP",
+"1","Sandbox","DxF Sandbox","Patient, Encounter, Practitioner","MLLP, FHIR, sFTP",,"USES_API","Patients","2","Sandbox","VA Cerner","Organizational","JSON","API key"
+"1","Sandbox","DxF Sandbox","Patient, Encounter, Practitioner","MLLP, FHIR, sFTP",,"USES_API","Facilities","2","Sandbox","VA Cerner","Organizational","JSON","API key"
+"1","Sandbox","DxF Sandbox","Patient, Encounter, Practitioner","MLLP, FHIR, sFTP",,"USES_API","Providers","2","Sandbox","VA Cerner","Organizational","JSON","API key"
