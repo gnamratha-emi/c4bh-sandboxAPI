@@ -1,0 +1,23 @@
+#Load csv Data
+
+LOAD CSV WITH HEADERS FROM 'https://github.com/gnamratha-emi/c4bh-sandboxAPI/blob/main/Sandbox_Table.csv?raw=true' AS row
+MERGE (sandbox:Sandbox {id: row.Id, name: row.name})
+SET sandbox.categories = row.Categories,
+ sandbox.protocols = row.Protocols,
+ sandbox.authentication = row.Authentication;
+
+LOAD CSV WITH HEADERS FROM 'https://github.com/gnamratha-emi/c4bh-sandboxAPI/blob/main/APIs_Table.csv?raw=true' AS row
+MATCH (source:Sandbox {id: row.source_ID})
+MATCH (target:Sandbox {id: row.target_ID})
+MERGE (source)-[r:USES_API {api_type: row.apiType}]->(target) 
+
+#Test load
+MATCH (n) RETURN n LIMIT 10;
+
+#Viz in Neo4j Browser
+MATCH (n)-[r:USES_API]->(m)
+RETURN n, r, m, r.api_type AS relationship_label
+
+#Viz in Neo4j Bloom
+MATCH (n)-[r:USES_API]->(m)
+RETURN n, r, m
